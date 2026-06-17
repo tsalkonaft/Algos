@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.tsalko.uniquisubstring.LeetCode56_MergeIntervals;
+import org.tsalko.uniquisubstring.LeetCode056_MergeIntervals;
 
 import java.util.stream.Stream;
 
@@ -24,13 +24,13 @@ public class LeetCode56 {
     @ParameterizedTest
     @MethodSource("dataProvider")
     public void test(int[][] intervals, int[][] expected) {
-        Assertions.assertArrayEquals(expected, new LeetCode56_MergeIntervals().merge(intervals));
+        Assertions.assertArrayEquals(expected, new LeetCode056_MergeIntervals().merge(intervals));
     }
 
     @ParameterizedTest
     @MethodSource("dataProvider")
     public void test2(int[][] intervals, int[][] expected) {
-        Assertions.assertArrayEquals(expected, new LeetCode56_MergeIntervals().merge2(intervals));
+        Assertions.assertArrayEquals(expected, new LeetCode056_MergeIntervals().merge2(intervals));
     }
 
 }

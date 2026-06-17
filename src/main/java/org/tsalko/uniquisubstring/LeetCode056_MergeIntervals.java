@@ -2,7 +2,7 @@ package org.tsalko.uniquisubstring;
 
 import java.util.*;
 
-public class LeetCode56_MergeIntervals {
+public class LeetCode056_MergeIntervals {
 
     public static final int MAX = 10000;
 
