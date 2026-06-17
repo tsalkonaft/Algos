@@ -1,4 +1,4 @@
-package org.tsalko.uniquisubstring;
+package org.tsalko.leetcode;
 
 import java.util.*;
 

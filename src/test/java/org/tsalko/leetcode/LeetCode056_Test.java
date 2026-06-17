@@ -1,14 +1,13 @@
-package org.tsalko.uniquesubstring;
+package org.tsalko.leetcode;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.tsalko.uniquisubstring.LeetCode056_MergeIntervals;
 
 import java.util.stream.Stream;
 
-public class LeetCode56 {
+public class LeetCode056_Test {
 
     static Stream<Arguments> dataProvider() {
         return Stream.of(
