@@ -25,7 +25,7 @@ package org.tsalko.leetcode;
  */
 public class LeetCode009_PalindromeNumber {
 
-    public static boolean isPalindromeUsingString(int x) {
+    public boolean isPalindromeUsingString(int x) {
         String value = String.valueOf(x);
         if (value.length() == 1) {
             return true;
@@ -41,7 +41,7 @@ public class LeetCode009_PalindromeNumber {
         return true;
     }
 
-    public static boolean isPalindrome(int x) {
+    public boolean isPalindrome(int x) {
         if (x < 0) {
             return false;
         }

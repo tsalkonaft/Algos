@@ -31,7 +31,7 @@ import java.util.Set;
  */
 public class LeetCode003_LongestSubstringWithoutRepeatingCharacters {
 
-    public static String getMaxUniqueSubStringNaive(String text) {
+    public String getMaxUniqueSubStringNaive(String text) {
         String result = "";
         for (int i = 0; i < text.length() - result.length(); i++) {
             StringBuilder currentSequence = new StringBuilder();
@@ -48,7 +48,7 @@ public class LeetCode003_LongestSubstringWithoutRepeatingCharacters {
         return result;
     }
 
-    public static String getMaxUniqueSubStringSlidingWindow(String s) {
+    public String getMaxUniqueSubStringSlidingWindow(String s) {
         if (s == null || s.isEmpty()) {
             throw new RuntimeException("Wrong input data");
         }

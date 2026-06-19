@@ -22,8 +22,8 @@ public class LeetCode009_Test {
     @ParameterizedTest
     @MethodSource("dataProvider")
     public void test(int input, boolean expected) {
-        Assertions.assertEquals(expected, LeetCode009_PalindromeNumber.isPalindromeUsingString(input));
-        Assertions.assertEquals(expected, LeetCode009_PalindromeNumber.isPalindrome(input));
+        Assertions.assertEquals(expected, new LeetCode009_PalindromeNumber().isPalindromeUsingString(input));
+        Assertions.assertEquals(expected, new LeetCode009_PalindromeNumber().isPalindrome(input));
     }
 
 }

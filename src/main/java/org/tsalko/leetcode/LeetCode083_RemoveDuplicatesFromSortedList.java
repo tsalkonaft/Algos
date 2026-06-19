@@ -2,7 +2,7 @@ package org.tsalko.leetcode;
 
 public class LeetCode083_RemoveDuplicatesFromSortedList {
 
-    public static ListNode deleteDuplicates(ListNode head) {
+    public ListNode deleteDuplicates(ListNode head) {
         ListNode tempNode = new ListNode(head.val);
 
         ListNode nextNode = head.next;

@@ -22,6 +22,6 @@ public class LeetCode083_Test {
     @ParameterizedTest
     @MethodSource("dataProvider")
     public void test(ListNode list, ListNode expected) {
-        Assertions.assertEquals(expected, LeetCode083_RemoveDuplicatesFromSortedList.deleteDuplicates(list));
+        Assertions.assertEquals(expected, new LeetCode083_RemoveDuplicatesFromSortedList().deleteDuplicates(list));
     }
 }

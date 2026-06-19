@@ -21,12 +21,12 @@ public class LeetCode003_Test {
     @ParameterizedTest
     @MethodSource("dataProvider")
     public void testMaxUniqueSubstringNaive(String input, String expected) {
-        Assertions.assertEquals(expected, LeetCode003_LongestSubstringWithoutRepeatingCharacters.getMaxUniqueSubStringNaive(input));
+        Assertions.assertEquals(expected, new LeetCode003_LongestSubstringWithoutRepeatingCharacters().getMaxUniqueSubStringNaive(input));
     }
 
     @ParameterizedTest
     @MethodSource("dataProvider")
     public void testMaxUniqueSubstringSlidingWindow(String input, String expected) {
-        Assertions.assertEquals(expected, LeetCode003_LongestSubstringWithoutRepeatingCharacters.getMaxUniqueSubStringSlidingWindow(input));
+        Assertions.assertEquals(expected, new LeetCode003_LongestSubstringWithoutRepeatingCharacters().getMaxUniqueSubStringSlidingWindow(input));
     }
 }
