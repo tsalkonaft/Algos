@@ -1,5 +1,7 @@
 package org.tsalko.leetcode;
 
+import org.tsalko.leetcode.utils.ListNode;
+
 public class LeetCode083_RemoveDuplicatesFromSortedList {
 
     public ListNode deleteDuplicates(ListNode head) {
@@ -21,34 +23,6 @@ public class LeetCode083_RemoveDuplicatesFromSortedList {
             nextResultNode = nextResultNode.next;
         }
         return resultNode;
-    }
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        public ListNode() {
-        }
-
-        public ListNode(int val) {
-            this.val = val;
-        }
-
-        public ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-
-        @Override
-        public boolean equals(Object obj) {
-            if (obj instanceof ListNode listNode) {
-                return this.val == listNode.val
-                        && (this.next == null && listNode.next == null
-                        || this.next != null && this.next.equals(listNode.next)
-                );
-            }
-            return false;
-        }
     }
 
 }
